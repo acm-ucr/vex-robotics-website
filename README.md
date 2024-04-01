@@ -11,7 +11,7 @@
 
 ## Figma
 
-[ACM UCR Website Template Figma Design File]([(https://www.figma.com/file/C6Wla33heXCCaqbgVptUT9/Vex-Robotics?type=design&node-id=0-1&mode=design&t=iV2zXvBDoX8FwfY1-0)])
+[UCR VEX ROBOTICS Official Website Template Figma Design File](https://www.figma.com/file/C6Wla33heXCCaqbgVptUT9/Vex-Robotics?type=design&node-id=0-1&mode=design&t=o8aENn39tHZ0wBQq-0)
 
 ## Node.js
 
