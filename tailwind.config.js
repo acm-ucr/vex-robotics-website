@@ -7,7 +7,14 @@ module.exports = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        vex: {
+          "red-100": "#FA7D7D",
+          "red-200": "#C4494B",
+        },
+      },
+    },
+    plugins: [],
   },
-  plugins: [],
 };
