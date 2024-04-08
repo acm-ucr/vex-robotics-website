@@ -13,6 +13,17 @@ module.exports = {
         russo: ["var(--font-russo)"],
         righteous: ["var(--font-righteous)"],
       },
+      colors: {
+        vex: {
+          "purple-100": "#B4A5EE",
+          "purple-200": "#8870E3",
+          "purple-300": "#826BE4",
+          "purple-400": "#5543A2",
+          grey: "#BBBBBB",
+          black: "#0C0922",
+          white: "#FFFFFF",
+        },
+      },
     },
   },
   plugins: [],
