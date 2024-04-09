@@ -8,6 +8,11 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        saira: ["var(--font-saira)"],
+        russo: ["var(--font-russo)"],
+        righteous: ["var(--font-righteous)"],
+      },
       colors: {
         vex: {
           "purple-100": "#B4A5EE",
