@@ -2,6 +2,7 @@
 import "./globals.css";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import Media from "@/components/Media";
 
 export const metadata = {
   title: "VEX Robotics at UCR",
@@ -17,6 +18,7 @@ export default function RootLayout({ children }) {
           {children}
         </div>
         <Footer />
+        <Media />
       </body>
     </html>
   );
