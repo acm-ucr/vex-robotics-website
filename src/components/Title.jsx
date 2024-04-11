@@ -1,7 +1,9 @@
 import React from "react";
 
-const titleText = () => {
-  return <title>ABOUT US</title>;
+const Title = () => {
+  return (<div font-russo style={{fontSize:"110px", color:"#AAAAAA"}}>
+      ABOUT US
+    </div>);
 };
 
-export default titleText;
+export default Title;
