@@ -11,7 +11,7 @@ import { Russo_One } from "next/font/google";
 const saira = Saira({
   subsets: ["latin"],
   display: "swap",
-  varible: "--font-saira",
+  variable: "--font-saira",
 });
 
 // eslint-disable-next-line no-unused-vars
@@ -19,7 +19,7 @@ const russo = Russo_One({
   subsets: ["latin"],
   display: "swap",
   weight: "400",
-  varible: "--font-russo",
+  variable: "--font-russo",
 });
 
 // eslint-disable-next-line no-unused-vars
@@ -27,7 +27,7 @@ const righteous = Righteous({
   subsets: ["latin"],
   display: "swap",
   weight: "400",
-  varible: "--font-righteous",
+  variable: "--font-righteous",
 });
 
 export const metadata = {
@@ -38,7 +38,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="flex flex-col justify-center">
+      <body
+        className={`flex flex-col justify-center ${russo.variable} ${righteous.variable} ${saira.variable}`}
+      >
         <Navigation />
         <div className="w-full flex flex-col items-center justify-center ">
           {children}
