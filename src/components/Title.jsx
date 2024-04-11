@@ -1,9 +1,11 @@
 import React from "react";
 
 const Title = () => {
-  return (<div font-russo style={{fontSize:"110px", color:"#AAAAAA"}}>
+  return (
+    <div class="font-russo" style={{ fontSize: "110px", color: "#FFFFFF" }}>
       ABOUT US
-    </div>);
+    </div>
+  );
 };
 
 export default Title;

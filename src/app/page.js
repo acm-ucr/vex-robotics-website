@@ -1,9 +1,7 @@
 import Title from "@/components/Title";
 
 const Home = () => {
-  return (<Title/>);
+  return <Title />;
 };
 
 export default Home;
-
-
