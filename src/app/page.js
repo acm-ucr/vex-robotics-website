@@ -1,5 +1,10 @@
+import Landing from "@/components/landing/Landing";
 const Home = () => {
-  return <>Hello World</>;
+  return (
+    <div>
+      <Landing />
+    </div>
+  );
 };
 
 export default Home;
