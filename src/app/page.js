@@ -1,5 +1,10 @@
+import SubteamTag from "@/components/SubteamTag";
 const Home = () => {
-  return <>Hello World</>;
+  return (
+    <>
+      <SubteamTag text={"hello"} />
+    </>
+  );
 };
 
 export default Home;
