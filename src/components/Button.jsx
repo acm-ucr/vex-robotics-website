@@ -1,14 +1,14 @@
 import React from "react";
-import Image from "next/image";
-import JoinUs from "../../public/assets/JoinUs.svg";
+import Link from "next/link";
 
-const Button = () => {
+const Button = ({ link, text, color }) => {
   return (
-    <div className="">
-      <button className="bg-vex-purple-300 rounded-2xl h-24 w-60 flex justify-center items-center">
-        <Image src={JoinUs} alt="Join Us" />
-      </button>
-    </div>
+    <Link
+      href={link}
+      className={`${color} text-white font-righteous py-2 px-4 rounded`}
+    >
+      {text}
+    </Link>
   );
 };
 

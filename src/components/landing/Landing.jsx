@@ -18,7 +18,7 @@ const Landing = () => {
       <div className="content-center h-screen">
         <Title />
         <div className="flex justify-center mt-10">
-          <Button />
+          <Button link={"/"} text={"Join Us"} color={"bg-vex-purple-300"}/>
         </div>
       </div>
     </div>
