@@ -1,5 +1,5 @@
 "use client";
-import logo from "@/public/assets/logo.png";
+import logo from "@/public/assets/logo.webp";
 import React, { useState } from "react";
 import Link from "next/link";
 import { items } from "@/data/navigation";
