@@ -2,7 +2,7 @@ import React from "react";
 
 const Title = () => {
   return (
-    <div class="font-russo" style={{ fontSize: "110px", color: "#FFFFFF" }}>
+    <div class="font-russo text-white text-[110px]">
       ABOUT US
     </div>
   );
