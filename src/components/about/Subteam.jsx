@@ -17,7 +17,7 @@ const Subteam = ({ text }) => {
           alt="Placeholder"
           className="size-44 rounded-full float-left"
         />
-        <p className="pl-4 max-w-xs text-center font-saira">{text}</p>
+        <p className="pl-4 max-w-sm text-center text-xl font-saira">{text}</p>
       </div>
     </div>
   );
