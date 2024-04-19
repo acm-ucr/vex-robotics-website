@@ -5,6 +5,4 @@ const Home = () => {
       <Landing />
     </div>
   );
-};
-
 export default Home;

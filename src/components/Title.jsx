@@ -8,10 +8,9 @@ const Title = () => {
     <div className="">
       <Image src={Logo} alt="VEX Robotics Logo" width={964} height={66} />
       <div className="flex justify-center">
-        <Image src={Location} alt="UCR Logo" width={444} height={66} />
+        <div class="font-russo text-white text-8xl">ABOUT US</div>
       </div>
     </div>
   );
-};
 
 export default Title;
