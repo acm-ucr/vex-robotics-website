@@ -10,8 +10,12 @@ const Companies = () => {
       </p>
 
       <div className="flex flex-row w-full justify-center">
-        <Image src={Polymaker} className="w-full  mx-10 my-5 " />
-        <Image src={Worthington} className="w-full  mx-10" />
+        <Image
+          src={Polymaker}
+          alt="Polymaker"
+          className="w-full  mx-10 my-5 "
+        />
+        <Image src={Worthington} alt="Worthington" className="w-full  mx-10" />
       </div>
     </div>
   );
