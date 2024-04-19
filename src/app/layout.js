@@ -39,15 +39,13 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`flex flex-col justify-center ${russo.variable} ${righteous.variable} ${saira.variable}`}
+        className={`bg-vex-black flex flex-col justify-center ${russo.variable} ${righteous.variable} ${saira.variable}`}
       >
         <Navigation />
-        <div className="w-full flex flex-col items-center justify-center ">
+        <div className="w-full flex flex-col items-center justify-center">
           {children}
         </div>
-        <div className="fixed bottom-0">
-          <Footer />
-        </div>
+        <Footer />
       </body>
     </html>
   );

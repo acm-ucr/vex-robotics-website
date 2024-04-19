@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const Companies = () => {
   return (
-    <div className=" flex flex-col bg-[#1D2939] w-full px-4 rounded-md items-center font-inter">
+    <div className=" flex flex-col bg-[#1D2939] w-1/2 px-4 rounded-md items-center font-inter">
       <p className="text-white text-xl text-nowrap my-5 ">
         Trusted by 4,000+ Companies
       </p>

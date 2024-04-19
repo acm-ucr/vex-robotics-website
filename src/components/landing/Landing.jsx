@@ -5,7 +5,7 @@ import Button from "@/components/Button";
 
 const Landing = () => {
   return (
-    <div className="">
+    <div>
       <div>
         <Image
           className="-z-10"
