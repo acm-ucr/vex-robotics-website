@@ -1,7 +1,9 @@
-import Title from "@/components/Title";
-
+import Landing from "@/components/landing/Landing";
 const Home = () => {
-  return <Title />;
+  return (
+    <div>
+      <Landing />
+    </div>
+  );
 };
-
 export default Home;
