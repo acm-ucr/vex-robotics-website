@@ -1,5 +1,11 @@
+import Companies from "@/components/Companies";
+
 const Home = () => {
-  return <>Hello World</>;
+  return (
+    <div>
+      <Companies />
+    </div>
+  );
 };
 
 export default Home;
