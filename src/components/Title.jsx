@@ -1,7 +1,6 @@
 import React from "react";
 import Image from "next/image";
 import Logo from "../../public/assets/VEXROBOTICS.svg";
-import Location from "../../public/assets/UCR.svg";
 
 const Title = () => {
   return (
@@ -12,5 +11,5 @@ const Title = () => {
       </div>
     </div>
   );
-
+};
 export default Title;
