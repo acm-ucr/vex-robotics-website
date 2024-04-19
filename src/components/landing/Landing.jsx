@@ -10,7 +10,7 @@ const Landing = () => {
         <Image
           className="-z-10"
           objectFit="cover"
-          src="/images/vexrobo.jpg"
+          src="/images/vexrobo.webp"
           layout="fill"
           alt="background image"
         />
