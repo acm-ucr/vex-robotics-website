@@ -45,7 +45,9 @@ export default function RootLayout({ children }) {
         <div className="w-full flex flex-col items-center justify-center ">
           {children}
         </div>
-        <Footer />
+        <div className="fixed bottom-0">
+          <Footer />
+        </div>
       </body>
     </html>
   );
