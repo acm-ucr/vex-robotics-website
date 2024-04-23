@@ -10,9 +10,9 @@ import LeftPattern from "../../public/assets/LeftPattern.svg";
 import Image from "next/image";
 const Footer = () => {
   return (
-    <div className="bg-vex-black w-screen">
+    <div className="bg-vex-black w-full">
       <div className="flex justify-between flex-row">
-        <div className="mx-10 w-1/4">
+        <div className="ml-10 w-1/4">
           <Image src={LeftPattern} alt="left-pattern" />
         </div>
         <div className="w-1/4">
@@ -36,7 +36,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="mx-10 w-1/4">
+        <div className="mr-10 w-1/4">
           <Image src={RightPattern} alt="right-pattern" />
         </div>
       </div>
