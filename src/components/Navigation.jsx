@@ -8,7 +8,7 @@ import Image from "next/image";
 const Navigation = () => {
   const [selected, setSelected] = useState("");
   return (
-    <div className="md:pl-0 pl-2 mr-5 md:ml-12 ml-9  h-8 md:h-[22vh] bg-vex-black bg-opacity-80 w-full flex md:justify-between items-center backdrop-blur font-righteous text-[10px] md:text-lg 2xl:text-2xl pt-11">
+    <div className="md:pl-0 pl-2 mr-5 h-8 md:h-[22vh] bg-vex-black bg-opacity-80 w-full flex md:justify-between items-center backdrop-blur font-righteous text-[10px] md:text-lg 2xl:text-2xl pt-11">
       <Link
         onClick={() => {
           setSelected("");
@@ -22,7 +22,7 @@ const Navigation = () => {
           className="md:ml-24 md:max-w-[45%] max-w-full pb-12"
         />
       </Link>
-      <div className="md:pl-0 pl-3 pr-7 mr-24 items-center flex flex-row whitespace-nowrap gap-4 md:w-1/2 justify-around w-3/5">
+      <div className="md:pl-0 pl-3 pr-7 items-center flex flex-row whitespace-nowrap gap-4 md:w-1/2 justify-around w-3/5">
         {items.map((item, index) => (
           <Link
             href={item.link}
