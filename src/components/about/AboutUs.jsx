@@ -4,7 +4,7 @@ import Placeholder from "@/public/images/placeholder.webp";
 
 const AboutUs = () => {
   return (
-    <div className="w-2/5 flex flex-col justify-center items-center">
+    <div className="w-2/5 flex flex-col justify-center items-center text-vex-white">
       <Image src={Placeholder} alt="Placeholder" className="mb-5 w-4/5" />
       <p className="text-center font-saira text-xl">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
