@@ -1,7 +1,7 @@
-import Team from "@/components/board/Team";
+import Boards from "@/components/board/Boards";
 
 const TeamPage = () => {
-  return <Team />;
+  return <Boards />;
 };
 
 export default TeamPage;
