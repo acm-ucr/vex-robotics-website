@@ -6,7 +6,7 @@ import Button from "@/components/Button";
 const Landing = () => {
   return (
     <div className="flex flex-col justify-center items-center">
-      <div >
+      <div>
         <Image
           className="-z-10"
           objectFit="cover"
