@@ -17,10 +17,10 @@ const Footer = () => {
         </div>
         <div className="w-1/4">
           <div className="bg-vex-purple-400 grid justify-items-center grid-rows-2 justify-center pt-10 rounded-lg">
-            <div className="w-1/3">
+            <div className="w-11 md:w-24">
               <Image src={Logo} alt="logo" />
             </div>
-            <div className="flex flex-row justify-center w-2/12 gap-x-2 md:gap-x-8">
+            <div className="flex flex-row justify-center w-3 md:w-9 gap-x-2 md:gap-x-8">
               <Image src={InstagramLogo} alt="instagram-logo" />
               <Image src={DiscordLogo} alt="discord-logo" />
               <Image src={EmailLogo} alt="email-logo" />
