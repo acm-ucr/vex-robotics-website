@@ -6,8 +6,8 @@ import Button from "../Button";
 
 const AboutUs = () => {
   return (
-    <div className="flex flex-col justify-center items-center text-vex-white">
-      <p className="text-center font-russo text-4xl mb-9">ABOUT US</p>
+    <div className="flex flex-col justify-center items-center">
+      <p className="text-center text-vex-white font-russo text-4xl mb-9">ABOUT US</p>
       <div className="w-2/5 flex flex-col justify-center items-center text-vex-white">
         <Image src={Placeholder} alt="Placeholder" className="mb-11 w-4/5" />
         <p className="text-center font-saira text-xl">
@@ -40,9 +40,10 @@ const AboutUs = () => {
       </div>
 
       <div className="my-12 flex justify-center border-indigo-500 border-2 rounded-lg text-xl">
-        <Button link="/" text="Contact Us" color="bg-vex-black" />
+        <Button link="/" text="Contact Us" color="bg-vex-black"/>
       </div>
     </div>
+    
   );
 };
 
