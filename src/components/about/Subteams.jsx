@@ -1,6 +1,6 @@
 import React from "react";
 import Subteam from "./Subteam";
-import { items } from "@/data/subteams";
+import { items } from "@/data/subteam";
 
 const Subteams = () => {
   return (
