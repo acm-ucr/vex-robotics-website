@@ -63,7 +63,7 @@ const CalendarEvent = () => {
   }, []);
 
   return (
-    <section className="w-full flex justify-center items-center flex-col mt-[2vh] -mb-28 font-lora">
+    <section className="w-2/3 flex justify-center items-center flex-col mt-[2vh] -mb-28 font-lora bg-vex-white">
       <motion.div
         className="w-10/12 flex justify-center items-center"
         variants={animation}
