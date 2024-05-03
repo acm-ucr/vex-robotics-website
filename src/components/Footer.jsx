@@ -20,7 +20,7 @@ const Footer = () => {
             <div className="w-1/3">
               <Image src={Logo} alt="logo" />
             </div>
-            <div className="flex flex-row gap-x-8">
+            <div className="flex flex-row justify-center w-2/12 gap-x-2 md:gap-x-8">
               <Image src={InstagramLogo} alt="instagram-logo" />
               <Image src={DiscordLogo} alt="discord-logo" />
               <Image src={EmailLogo} alt="email-logo" />
