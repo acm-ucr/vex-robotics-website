@@ -5,7 +5,7 @@ import Button from "@/components/Button";
 
 const Landing = () => {
   return (
-    <div>
+    <div className="flex flex-col justify-center items-center">
       <div>
         <Image
           className="-z-10"
@@ -15,8 +15,9 @@ const Landing = () => {
           alt="background image"
         />
       </div>
-      <div className="content-center h-screen">
+      <div className="flex flex-col justify-center items-center h-screen md:w-full w-[70%] ">
         <Title />
+
         <div className="flex justify-center mt-10">
           <Button link={"/"} text={"Join Us"} color={"bg-vex-purple-300"} />
         </div>
