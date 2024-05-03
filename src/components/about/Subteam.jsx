@@ -4,7 +4,7 @@ import SubteamTag from "../SubteamTag";
 
 const Subteam = ({ text, img, float = "left" }) => {
   return (
-    <div>
+    <div className="text-vex-white">
       <div
         className={`pb-3 flex items-center ${
           float === "right" ? "justify-end" : ""
