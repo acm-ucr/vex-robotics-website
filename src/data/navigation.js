@@ -5,7 +5,7 @@ export const items = [
   },
   {
     name: "ABOUT US",
-    link: "/about-us",
+    link: "/about",
   },
   {
     name: "MEDIA",
@@ -17,6 +17,6 @@ export const items = [
   },
   {
     name: "OUR TEAM",
-    link: "/our-team",
+    link: "/team",
   },
 ];
