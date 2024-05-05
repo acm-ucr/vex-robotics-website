@@ -11,7 +11,7 @@ import Image from "next/image";
 const Footer = () => {
   return (
     <div className="bg-vex-black w-full">
-      <div className="flex justify-between flex-row">
+      <div className="flex justify-between flex-row mt-10">
         <div className="ml-10 w-1/4">
           <Image src={LeftPattern} alt="left-pattern" />
         </div>
