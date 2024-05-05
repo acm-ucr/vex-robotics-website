@@ -4,10 +4,10 @@ import Button from "../Button";
 const Sponsors = () => {
   return (
     <div className="w-2/3 text-white">
-      <p className="text-4xl font-russo text-vex-white text-center">
+      <p className="md:text-7xl text-3xl font-russo text-vex-white text-center">
         OUR SPONSORS
       </p>
-      <p className=" my-2 font-saira text-vex-white text-center">
+      <p className=" my-6 font-saira text-vex-white text-center">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
         veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
