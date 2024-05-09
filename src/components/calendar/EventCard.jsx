@@ -4,9 +4,9 @@ const EventCard = ({ EventName, Time, Location }) => {
   return (
     <div className="font-saira bg-vex-white rounded-3xl w-1/3">
       <div className=" p-4 ml-2">
-        <div className="font-extrabold italic text-vex-purple-300 text-4xl flex row-cols-2">
+        <div className="font-extrabold italic text-vex-purple-300 text-4xl flex row-cols-2 justify-between">
           {EventName}
-          <div className="flex row-cols-2 gap-1 ml-56">
+          <div className="flex row-cols-2 gap-1 ">
             <div class="w-4 h-4 bg-vex-purple-100 rounded-full"></div>
             <div class="w-4 h-4 bg-vex-purple-100 rounded-full"></div>
           </div>
