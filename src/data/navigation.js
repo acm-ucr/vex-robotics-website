@@ -1,7 +1,7 @@
 export const items = [
   {
     name: "HOME",
-    link: "/home",
+    link: "/",
   },
   {
     name: "ABOUT US",
