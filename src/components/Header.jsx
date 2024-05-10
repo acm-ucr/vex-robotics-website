@@ -1,5 +1,5 @@
 import React from "react";
-import PurpleBar from "../../../public/assets/PurpleBar.svg";
+import PurpleBar from "../../public/assets/PurpleBar.svg";
 import Image from "next/image";
 
 const Header = ({ text }) => {
