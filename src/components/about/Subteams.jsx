@@ -4,7 +4,7 @@ import { items } from "@/data/subteam";
 
 const Subteams = () => {
   return (
-    <div>
+    <div className="pb-12">
       {items.map((item, index) => (
         <Subteam
           key={index}
