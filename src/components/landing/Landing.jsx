@@ -17,7 +17,7 @@ const Landing = () => {
       <div className="flex flex-col justify-center items-center h-screen md:w-full w-[70%] ">
         <Title />
 
-        <div className="flex justify-center mt-10">
+        <div className="flex justify-center mt-10 hover:-translate-y-1 duration-300">
           <Button link={"/"} text={"Join Us"} color={"bg-vex-purple-300"} />
         </div>
       </div>
