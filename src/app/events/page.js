@@ -2,6 +2,7 @@ import Events from "@/components/calendar/Events";
 import Calendar from "@/components/calendar/Calendar";
 import Image from "next/image";
 import purpleBar from "@/public/assets/PurpleBar.svg";
+import Button from "@/components/Button";
 import Header from "@/components/Header";
 
 const EventsPage = () => {
@@ -10,6 +11,7 @@ const EventsPage = () => {
       <Header text="EVENTS" />
       <Calendar />
       <Events />
+      <Button link="/contact" text="Contact Us" color="" />
       <Image alt="bottom pattern" src={purpleBar} className="w-3/4" />
     </div>
   );
