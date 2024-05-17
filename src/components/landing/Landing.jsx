@@ -2,7 +2,6 @@ import React from "react";
 import Image from "next/image";
 import Title from "@/components/Title";
 import Button from "@/components/Button";
-
 const Landing = () => {
   return (
     <div className="flex flex-col justify-center items-center">

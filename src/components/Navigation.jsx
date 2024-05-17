@@ -13,16 +13,16 @@ const Navigation = () => {
         onClick={() => {
           setSelected("");
         }}
-        className="md:mr-0 pt-10 hover:opacity-60 duration-300 w-2/5 h-auto 2xl:w-1/4"
+        className="md:mr-0 pt-10 hover:opacity-60 duration-300 md:w-2/5 w-1/5 h-auto 2xl:w-1/4"
         href="/"
       >
         <Image
           alt="logo"
           src={logo}
-          className="md:ml-24 md:max-w-[45%] max-w-full pb-12"
+          className="md:ml-24 md:max-w-[41%] md:mb-3 ml-4 max-w-[70%] pb-12"
         />
       </Link>
-      <div className="md:pl-0 pl-4 pr-7 items-center flex flex-row whitespace-nowrap gap-4 md:w-1/2 justify-around">
+      <div className="md:pl-0 pl-4 pr-7 items-center flex flex-row whitespace-nowrap gap-4 sm:w-3/5 w-2/5 justify-around">
         {items.map((item, index) => (
           <Link
             href={item.link}

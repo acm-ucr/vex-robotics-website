@@ -2,12 +2,11 @@
 import React from "react";
 import Button from "../Button";
 import { motion } from "framer-motion";
+import Header from "../Header";
 const Sponsors = () => {
   return (
     <div className="w-2/3 text-white">
-      <p className="text-5xl font-russo text-vex-white text-center">
-        OUR SPONSORS
-      </p>
+      <Header text="OUR SPONSORS" />
       <p className=" my-6 md:text-3xl text-xl font-saira text-vex-white text-center">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
