@@ -24,7 +24,7 @@ const Subteam = ({ text, img, float = "left" }) => {
             className="aspect-square size-1/6 rounded-full"
           />
         ) : null}
-        <p className="px-4 max-w-sm text-center md:text-xl text-md font-saira">
+        <p className="px-4 max-w-sm text-center lg:text-xl sm:text-sm font-saira">
           {text}
         </p>
         {float === "right" ? (
