@@ -12,6 +12,7 @@ const Medias = () => {
           date={item.date}
           title={item.title}
           event={item.event}
+          delay={0.2 * index}
         />
       ))}
     </div>
