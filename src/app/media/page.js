@@ -3,6 +3,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import Medias from "@/components/media/Medias";
 import Button from "@/components/Button";
+import Header from "@/components/Header";
 
 const MediaPage = () => {
   return (
