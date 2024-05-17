@@ -1,10 +1,12 @@
 import Boards from "@/components/board/Boards";
 import Image from "next/image";
 import purpleBar from "@/public/assets/PurpleBar.svg";
+import Header from "@/components/Header";
 
 const TeamPage = () => {
   return (
     <>
+      <Header text="OUR TEAM" />
       <p className="text-vex-purple-100 font-saira font-bold text-xl italic p-8">
         &ldquo;Statement About Team&rdquo;
       </p>
