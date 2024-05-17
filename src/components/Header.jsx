@@ -1,8 +1,4 @@
 import React from "react";
-<<<<<<< HEAD
-=======
-import PurpleBar from "../../public/assets/PurpleBar.svg";
->>>>>>> 80afb43ee97eb8cd1836acedc432f7a968da838e
 import Image from "next/image";
 import PurpleBar from "../../public/assets/PurpleBar.svg";
 
