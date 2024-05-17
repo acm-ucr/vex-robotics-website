@@ -1,6 +1,7 @@
+"use client";
 import React from "react";
 import Button from "../Button";
-
+import { motion } from "framer-motion";
 const Sponsors = () => {
   return (
     <div className="w-2/3 text-white">
@@ -17,7 +18,12 @@ const Sponsors = () => {
         id est laborum.
       </p>
       <div className="my-3 flex justify-center">
-        <Button link="/sponsors" text="Sponsor Us" color="bg-vex-black" />
+        <motion.div
+          whileHover={{ scale: 1.1 }}
+          transition={{ type: "spring", stiffness: 300, damping: 30 }}
+        >
+          <Button link="/sponsors" text="Sponsor Us" color="bg-vex-black" />
+        </motion.div>
       </div>
     </div>
   );
