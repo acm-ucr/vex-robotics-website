@@ -9,7 +9,7 @@ const Subteams = () => {
     <div className="pb-12">
       {items.map((item, index) => {
         const slideanimation = {
-          hidden: { opacity: 0, x: index % 2 === 0 ? -100 : 100 },
+          hidden: { opacity: 0, y: -10 },
           show: {
             opacity: 1,
             x: 0,
