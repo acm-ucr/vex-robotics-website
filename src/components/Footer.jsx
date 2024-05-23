@@ -10,23 +10,23 @@ import { ICONS } from "../data/footer";
 const Footer = () => {
   return (
     <div className="bg-vex-black w-full">
-      <div className="flex justify-between flex-row mt-10">
-        <div className="ml-10 w-1/4">
+      <div className="flex justify-center flex-row mt-10">
+        <div className="md:mx-10 w-1/4 md:block hidden">
           <Image src={LeftPattern} alt="left-pattern" />
         </div>
-        <div className="w-1/4">
-          <div className="bg-vex-purple-400 grid justify-items-center grid-rows-2 justify-center pt-10 rounded-lg">
-            <div className="w-11 md:w-24">
+        <div className="md:w-1/5 w-4/5">
+          <div className="bg-vex-purple-400 grid justify-items-center md:grid-rows-2 justify-center rounded-lg items-center p-3">
+            <div className="w-1/2">
               <Image src={Logo} alt="logo" />
             </div>
-            <div className="flex flex-row justify-center w-3 md:w-9 gap-x-2 md:gap-x-8">
+            <div className="flex flex-row justify-around w-full">
               {ICONS.map((icon, index) => {
                 return (
                   <Link
                     key={index}
                     href={icon.link}
                     target="_blank"
-                    className="hover:scale-110 duration-300 md:text-5xl sm:text-2xl text-lg text-white"
+                    className="hover:scale-110 duration-300 md:text-5xl text-5xl text-white"
                   >
                     {icon.logo}
                   </Link>
@@ -43,7 +43,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="mr-10 w-1/4">
+        <div className="md:mx-10 w-1/4 md:block hidden">
           <Image src={RightPattern} alt="right-pattern" />
         </div>
       </div>
