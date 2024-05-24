@@ -1,4 +1,4 @@
-import Placeholder from "/public/images/placeholder.webp";
+import Placeholder from "@/public/images/placeholder.webp";
 
 export const boards = [
   {
