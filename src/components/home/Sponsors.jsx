@@ -5,9 +5,9 @@ import { motion } from "framer-motion";
 import Header from "../Header";
 const Sponsors = () => {
   return (
-    <div className="w-2/3 text-white">
+    <div className="w-2/3 flex flex-col items-center">
       <Header text="OUR SPONSORS" />
-      <p className=" my-6 md:text-3xl text-xl font-saira text-vex-white text-center">
+      <p className="my-6 md:text-3xl text-xl font-saira text-vex-white text-center">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
         veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
