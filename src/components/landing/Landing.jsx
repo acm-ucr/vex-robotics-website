@@ -20,14 +20,14 @@ const Landing = () => {
         <motion.div
           initial={{ opacity: 0, y: -200 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, ease: "easeIn", delay: 0.2 }}
+          transition={{ duration: 0.7, ease: "easeIn", delay: 0.1 }}
         >
           <Title />
         </motion.div>
         <motion.div
           initial={{ opacity: 0, y: 200 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, ease: "easeIn", delay: 0.2 }}
+          transition={{ duration: 0.7, ease: "easeIn", delay: 0.1 }}
         >
           <div className="flex justify-center mt-10 hover:-translate-y-1 duration-300">
             <Button link={"/"} text={"Join Us"} color={"bg-vex-purple-300"} />
