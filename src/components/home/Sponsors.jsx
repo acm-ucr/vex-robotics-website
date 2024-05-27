@@ -1,13 +1,13 @@
+"use client";
 import React from "react";
 import Button from "../Button";
-
+import { motion } from "framer-motion";
+import Header from "../Header";
 const Sponsors = () => {
   return (
-    <div className="w-2/3 text-white">
-      <p className="text-4xl font-russo text-vex-white text-center">
-        OUR SPONSORS
-      </p>
-      <p className=" my-2 font-saira text-vex-white text-center">
+    <div className="w-2/3 flex flex-col items-center">
+      <Header text="OUR SPONSORS" />
+      <p className="my-6 md:text-3xl text-xl font-saira text-vex-white text-center">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
         veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
@@ -17,7 +17,12 @@ const Sponsors = () => {
         id est laborum.
       </p>
       <div className="my-3 flex justify-center">
-        <Button link="/sponsors" text="Sponsor Us" color="bg-vex-black" />
+        <motion.div
+          whileHover={{ scale: 1.1 }}
+          transition={{ type: "spring", stiffness: 300, damping: 30 }}
+        >
+          <Button link="/sponsors" text="Sponsor Us" color="bg-vex-black" />
+        </motion.div>
       </div>
     </div>
   );

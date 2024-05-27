@@ -63,15 +63,15 @@ const CalendarEvent = () => {
   }, []);
 
   return (
-    <section className="w-full flex justify-center items-center flex-col mt-[2vh] -mb-28 font-lora">
+    <section className="md:w-1/2 w-2/3 flex justify-center items-center flex-col mt-[2vh] font-lora bg-vex-white rounded-lg">
       <motion.div
-        className="w-10/12 flex justify-center items-center"
+        className="w-full flex justify-center items-center"
         variants={animation}
         transition={{ delay: 0.2 }}
         initial="hidden"
         whileInView="show"
       >
-        <div className="flex justify-center h-[70vh] sm:h-60[vh] md:w-3/4 lg:w-1/2 w-5/6 font-righteous relative mb-24 text-black font-bold border-0">
+        <div className="flex justify-center h-[70vh] sm:h-60[vh] w-full font-righteous relative text-black font-bold border-0">
           <Calendar
             date={date}
             className="w-full m-0 p-0 text-md md:text-2xl flex justify-center remove-calendar-gridlines overflow-hidden"
