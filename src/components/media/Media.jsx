@@ -16,7 +16,7 @@ const Media = ({ image, date, title, event, delay }) => {
         <Image src={image} alt="Placeholder" className="w-full h-full" />
       </div>
       <p className="md:text-sm text-[13px] text-vex-purple-400 font-saira">
-        {date}{" "}
+        {date}
       </p>
       <p className="md:text-xl text-sm text-vex-white font-bold font-saira">
         {title}
