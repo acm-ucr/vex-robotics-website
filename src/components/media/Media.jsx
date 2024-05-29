@@ -6,7 +6,8 @@ import { motion } from "framer-motion";
 const Media = ({ image, date, title, event, delay }) => {
   return (
     <motion.div
-      transition={{ duration: 0.4, delay: delay }}
+      whileHover={{ scale: 1.05 }}
+      transition={{ type: "spring", stiffness: 300, damping: 30 }}
       initial={{ opacity: 0, y: -10 }}
       animate={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.5 }}
