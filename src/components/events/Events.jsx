@@ -27,22 +27,24 @@ const Events = ({ button = true }) => {
             new Date().getTime() + 60 * 60 * 24 * 7 * 10 * 1000
           ).toISOString()}`
         );
-        const offset = new Data().getTimezoneOffset() * 60000;
+        const offset = new Date().getTimezoneOffset() * 60000;
         const data = await response.json();
-        const items = data.items.map((item) => {
-          item.allDay = !item.start.dateTime;
-          (item.start = item.start.dateTime
-            ? new Date(item.start.dateTime)
-            : new Date(new Date(item.start.date).getTime() + offset)),
-            (item.end = new Date(
-              item.end.dateTime || new Date(item.end.date).getTime() + offset
-            )),
-            (item.hidden = false);
+        if (data.items) {
+          const items = data.items.map((item) => {
+            item.allDay = !item.start.dateTime;
+            (item.start = item.start.dateTime
+              ? new Date(item.start.dateTime)
+              : new Date(new Date(item.start.date).getTime() + offset)),
+              (item.end = new Date(
+                item.end.dateTime || new Date(item.end.date).getTime() + offset
+              )),
+              (item.hidden = false);
 
-          return item;
-        });
+            return item;
+          });
 
-        setEvents(items);
+          setEvents(items);
+        }
       } catch (error) {
         console.error("Error fetching data: ", error);
       }
@@ -105,7 +107,7 @@ const Events = ({ button = true }) => {
               );
             })
         ) : (
-          <p className="text-lg w-full text-center font-bold text-black mt-5 font-righteous">
+          <p className="text-lg w-full text-center font-bold text-white mt-5 font-russo">
             no upcoming events
           </p>
         )}
