@@ -11,7 +11,7 @@ export const ICONS = [
     logo: <FaDiscord />,
   },
   {
-    link: "mailto::ucrvexrobotics@gmail.com",
+    link: "mailto:ucrvexrobotics@gmail.com",
     logo: <IoMail />,
   },
 ];
