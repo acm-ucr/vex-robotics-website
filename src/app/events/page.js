@@ -1,4 +1,4 @@
-import Events from "@/components/calendar/Events";
+import Events from "@/components/events/Events";
 import Calendar from "@/components/calendar/Calendar";
 import Image from "next/image";
 import purpleBar from "@/public/assets/PurpleBar.svg";
