@@ -21,7 +21,11 @@ const Sponsors = () => {
           whileHover={{ scale: 1.1 }}
           transition={{ type: "spring", stiffness: 300, damping: 30 }}
         >
-          <Button link="/sponsors" text="Sponsor Us" color="bg-vex-black" />
+          <Button
+            link="ucrvexrobotics@gmail.com"
+            text="Sponsor Us"
+            color="bg-vex-black"
+          />
         </motion.div>
       </div>
     </div>
