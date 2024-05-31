@@ -30,7 +30,11 @@ const Landing = () => {
           transition={{ duration: 0.7, ease: "easeIn", delay: 0.1 }}
         >
           <div className="flex justify-center mt-10 hover:-translate-y-1 duration-300">
-            <Button link={"/"} text={"Join Us"} color={"bg-vex-purple-300"} />
+            <Button
+              link="https://discord.gg/mvAKvydA"
+              text={"Join Us"}
+              color={"bg-vex-purple-300"}
+            />
           </div>
         </motion.div>
       </div>
