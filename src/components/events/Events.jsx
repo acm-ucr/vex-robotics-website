@@ -105,7 +105,7 @@ const Events = ({ button = true }) => {
                 <Event
                   key={event.id}
                   month={event.start
-                    .toLocaleString("default,", { month: "short" })
+                    .toLocaleString("default", { month: "short" })
                     .toUpperCase()}
                   day={event.start.getDate()}
                   time={formattedString}
