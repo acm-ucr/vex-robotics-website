@@ -27,12 +27,15 @@ const AboutUs = () => {
         <div className="md:w-2/5 w-4/5 flex flex-col justify-center items-center text-vex-white gap-10">
           <Image src={Placeholder} alt="Placeholder" className="w-4/5" />
           <p className="text-center font-saira md:text-xl text-lg">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur.
+            We are Ursa Mechanica, the VexU robotics team at the University of
+            California, Riverside. We are an official UCR Robotics Club
+            specialized in furthering engineering knowledge and excellence in
+            the field of robotics. We have a proud team of 10+ members who
+            placed in the 90th-percentile at the 2023 Vex World Championship and
+            qualified for 2024 Worlds by winning the most prestigious award, the
+            Excellence Award, at our last competition. In our team, students
+            will have a practical hands-on experience with engineering and
+            science concepts.
           </p>
         </div>
       </div>

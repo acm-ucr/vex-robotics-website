@@ -1,22 +1,17 @@
-import { AiFillLinkedin } from "react-icons/ai";
 import { FaDiscord, FaInstagram } from "react-icons/fa";
 import { IoMail } from "react-icons/io5";
 
 export const ICONS = [
   {
-    link: "https://www.instagram.com",
+    link: "https://www.instagram.com/ucr_vexrobotics/",
     logo: <FaInstagram />,
   },
   {
-    link: "https://www.discord.com",
+    link: "https://discord.gg/mvAKvydA",
     logo: <FaDiscord />,
   },
   {
-    link: "mailto::dummy@gmail.com",
+    link: "mailto:ucrvexrobotics@gmail.com",
     logo: <IoMail />,
-  },
-  {
-    link: "https://www.linkedin.com",
-    logo: <AiFillLinkedin />,
   },
 ];
