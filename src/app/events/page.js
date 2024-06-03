@@ -11,7 +11,11 @@ const EventsPage = () => {
       <Header text="EVENTS" />
       <Calendar />
       <Events />
-      <Button link="/contact" text="Contact Us" color="" />
+      <Button
+        link="mailto: ucrvexrobotics@gmail.com"
+        text="Contact Us"
+        color=""
+      />
       <Image alt="bottom pattern" src={purpleBar} className="w-3/4" />
     </div>
   );

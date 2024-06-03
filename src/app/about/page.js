@@ -10,7 +10,11 @@ const AboutPage = () => {
       <AboutUs />
       <Subteams />
       <Image src={purpleBar} alt="purple bar" className="w-3/4" />
-      <Button link="/contact" text="Contact Us" color="" />
+      <Button
+        link="mailto: ucrvexrobotics@gmail.com"
+        text="Contact Us"
+        color=""
+      />
     </div>
   );
 };
