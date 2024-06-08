@@ -22,7 +22,7 @@ const Sponsors = () => {
           transition={{ type: "spring", stiffness: 300, damping: 30 }}
         >
           <Button
-            link="ucrvexrobotics@gmail.com"
+            link="mailto: ucrvexrobotics@gmail.com"
             text="Sponsor Us"
             color="bg-vex-black"
           />
