@@ -7,6 +7,7 @@ import CustomToolbar from "./CustomToolbar.jsx";
 import CustomEvent from "./CustomEvents.jsx";
 import CustomHeader from "./CustomHeader.jsx";
 import Modal from "./Modal.jsx";
+import Events from "../events/Events.jsx";
 import { motion } from "framer-motion";
 
 const localizer = momentLocalizer(moment);
@@ -65,60 +66,64 @@ const CalendarEvent = () => {
   }, []);
 
   return (
-    <section className="md:w-1/2 w-2/3 flex justify-center items-center flex-col mt-[2vh] font-lora bg-vex-white rounded-lg">
-      <motion.div
-        className="w-full flex justify-center items-center"
-        variants={animation}
-        transition={{ delay: 0.2 }}
-        initial="hidden"
-        whileInView="show"
-      >
-        <div className="flex justify-center h-[70vh] sm:h-60[vh] w-full font-righteous relative text-black font-bold border-0">
-          <Calendar
-            date={date}
-            className="w-full m-0 p-0 text-md md:text-2xl flex justify-center remove-calendar-gridlines overflow-hidden"
-            allDayAccessor="allDay"
-            showAllEvents={true}
-            events={events}
-            localizer={localizer}
-            defaultView="month"
-            views={["month"]}
-            components={{
-              event: CustomEvent,
-              toolbar: CustomToolbar,
-              header: CustomHeader,
-            }}
-            onNavigate={(newDate) => {
-              return setDate(newDate);
-            }}
-            eventPropGetter={() => {
-              return {
-                className: `p-0 !active:ring-0 !focus:outline-0 !bg-transparent`,
-              };
-            }}
-            onSelectEvent={(event) => setEvent(event)}
-            dayPropGetter={(event) => {
-              return {
-                className: `${
-                  new Date(event).toLocaleDateString() ===
-                  new Date().toLocaleDateString()
-                    ? "!bg-opacity-80 !bg-saf-beige-200"
-                    : "!bg-transparent"
-                } `,
-                style: {
-                  margin: 0,
-                  padding: 0,
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                },
-              };
-            }}
-          />
-        </div>
-        {event && <Modal event={event} setEvent={setEvent} />}
-      </motion.div>
-    </section>
+    <div className="w-full flex flex-col justify-center items-center">
+      <section className="md:w-1/2 w-2/3 flex justify-center items-center flex-col mt-[2vh] font-lora bg-vex-white rounded-lg">
+        <motion.div
+          className="w-full flex justify-center items-center"
+          variants={animation}
+          transition={{ delay: 0.2 }}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true, amount: 0.1 }}
+        >
+          <div className="flex justify-center h-[70vh] sm:h-60[vh] w-full font-righteous relative text-black font-bold border-0">
+            <Calendar
+              date={date}
+              className="w-full m-0 p-0 text-md md:text-2xl flex justify-center remove-calendar-gridlines overflow-hidden"
+              allDayAccessor="allDay"
+              showAllEvents={true}
+              events={events}
+              localizer={localizer}
+              defaultView="month"
+              views={["month"]}
+              components={{
+                event: CustomEvent,
+                toolbar: CustomToolbar,
+                header: CustomHeader,
+              }}
+              onNavigate={(newDate) => {
+                return setDate(newDate);
+              }}
+              eventPropGetter={() => {
+                return {
+                  className: `p-0 !active:ring-0 !focus:outline-0 !bg-transparent`,
+                };
+              }}
+              onSelectEvent={(event) => setEvent(event)}
+              dayPropGetter={(event) => {
+                return {
+                  className: `${
+                    new Date(event).toLocaleDateString() ===
+                    new Date().toLocaleDateString()
+                      ? "!bg-opacity-80 !bg-saf-beige-200"
+                      : "!bg-transparent"
+                  } `,
+                  style: {
+                    margin: 0,
+                    padding: 0,
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                  },
+                };
+              }}
+            />
+          </div>
+          {event && <Modal event={event} setEvent={setEvent} />}
+        </motion.div>
+      </section>
+      <Events events={events} />
+    </div>
   );
 };
 
