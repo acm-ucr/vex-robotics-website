@@ -1,11 +1,10 @@
 "use client";
 import React from "react";
-import Placeholder from "@/public/images/placeholder.webp";
 import Image from "next/image";
 import DotBar from "@/public/assets/DotBar.svg";
 import CrossBar from "@/public/assets/CrossBar.svg";
 import { motion } from "framer-motion";
-
+import AboutPhoto from "@/public/images/about_photo.webp";
 const Vex = () => {
   return (
     <div className="flex flex-col xl:flex-row w-5/6 xl:w-3/4 items-center align-middle">
@@ -35,7 +34,11 @@ const Vex = () => {
           whileHover={{ scale: 1.1 }}
           transition={{ type: "spring", stiffness: 300, damping: 30 }}
         >
-          <Image src={Placeholder} alt="Placeholder" className="w-full z-10" />
+          <Image
+            src={AboutPhoto}
+            alt="Group =photo of club members"
+            className="w-full z-10"
+          />
         </motion.div>
         <Image
           src={CrossBar}

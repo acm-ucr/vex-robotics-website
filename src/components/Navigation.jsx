@@ -1,18 +1,16 @@
 "use client";
 import logo from "@/public/assets/logo.webp";
-import React, { useState } from "react";
 import Link from "next/link";
 import { items } from "@/data/navigation";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 
 const Navigation = () => {
-  const [selected, setSelected] = useState("");
+  const pathname = usePathname();
+
   return (
     <div className="md:pl-0 pl-2 mr-5 h-8 md:h-[22vh] bg-vex-black bg-opacity-80 w-full flex md:justify-between items-center backdrop-blur font-righteous text-[10px] md:text-lg 2xl:text-2xl pt-11">
       <Link
-        onClick={() => {
-          setSelected("");
-        }}
         className="md:mr-0 pt-10 hover:opacity-60 duration-300 md:w-2/5 w-1/5 h-auto 2xl:w-1/4"
         href="/"
       >
@@ -27,11 +25,8 @@ const Navigation = () => {
           <Link
             href={item.link}
             key={index}
-            onClick={() => {
-              setSelected(item.name);
-            }}
             className={`hover:text-vex-grey duration-300 border-dashed ${
-              selected === item.name
+              pathname === item.link
                 ? "border-b-2 border-vex-white text-vex-white"
                 : "text-vex-white"
             }`}

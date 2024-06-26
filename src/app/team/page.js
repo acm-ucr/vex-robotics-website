@@ -10,7 +10,7 @@ const TeamPage = () => {
       <p className="text-vex-purple-100 font-saira font-bold text-xl italic p-8">
         &ldquo;Statement About Team&rdquo;
       </p>
-      <Boards />;
+      <Boards />
       <Image alt="bottom pattern" src={purpleBar} className="w-3/4" />
     </>
   );
