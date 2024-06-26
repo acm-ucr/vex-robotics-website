@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import clubPhoto from "@/public/images/VexRoboticsClubPhoto.webp";
+import AboutPhoto from "@/public/images/about_photo.png";
 import Header from "../Header";
 import { motion } from "framer-motion";
 
@@ -25,7 +25,11 @@ const AboutUs = () => {
       <div className="flex flex-col justify-center items-center text-vex-white md:mt-0 mt-8 gap-10">
         <Header text="ABOUT US" />
         <div className="md:w-2/5 w-4/5 flex flex-col justify-center items-center text-vex-white gap-10">
-          <Image src={clubPhoto} alt="Placeholder" className="w-4/5" />
+          <Image
+            src={AboutPhoto}
+            alt="Group picture of club members"
+            className="w-4/5 rounded-xl"
+          />
           <p className="text-center font-saira md:text-xl text-lg">
             We are Ursa Mechanica, the VexU robotics team at the University of
             California, Riverside. We are an official UCR Robotics Club

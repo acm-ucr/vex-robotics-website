@@ -10,7 +10,11 @@ const Board = ({ image, name, role, major }) => {
       transition={{ type: "spring", stiffness: 300, damping: 30 }}
     >
       <div>
-        <Image className="size-full" src={image} alt="Board Member" />
+        <Image
+          className="size-full rounded-xl"
+          src={image}
+          alt="Board Member"
+        />
 
         <p className="text-vex-purple-100 text-2xl md:text-4xl font-bold font-saira">
           {name}
