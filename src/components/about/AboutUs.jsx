@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import AboutPhoto from "@/public/images/about_photo.png";
+import AboutPhoto from "@/public/images/about_photo.webp";
 import Header from "../Header";
 import { motion } from "framer-motion";
 

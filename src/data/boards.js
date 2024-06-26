@@ -1,10 +1,10 @@
-import BoardMember1 from "@/public/images/boards/Board_Member1.jpg";
-import BoardMember2 from "@/public/images/boards/Board_Member2.jpg";
-import BoardMember3 from "@/public/images/boards/Board_Member3.jpg";
-import BoardMember4 from "@/public/images/boards/Board_Member4.jpg";
-import BoardMember5 from "@/public/images/boards/Board_Member5.jpg";
-import BoardMember6 from "@/public/images/boards/Board_Member6.jpg";
-import BoardMember7 from "@/public/images/boards/Board_Member7.jpg";
+import BoardMember1 from "@/public/images/boards/Board_Member1.webp";
+import BoardMember2 from "@/public/images/boards/Board_Member2.webp";
+import BoardMember3 from "@/public/images/boards/Board_Member3.webp";
+import BoardMember4 from "@/public/images/boards/Board_Member4.webp";
+import BoardMember5 from "@/public/images/boards/Board_Member5.webp";
+import BoardMember6 from "@/public/images/boards/Board_Member6.webp";
+import BoardMember7 from "@/public/images/boards/Board_Member7.webp";
 
 export const boards = [
   {
