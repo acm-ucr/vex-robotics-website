@@ -41,7 +41,7 @@ const CalendarEvent = () => {
 
         const offset = new Date().getTimezoneOffset() * 60000;
         const data = await response.json();
-        console.log(data);
+
         if (data.items) {
           const items = data.items.map((item) => {
             item.allDay = !item.start.dateTime;
