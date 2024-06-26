@@ -1,7 +1,6 @@
 "use client";
 import Event from "./Event";
 import { motion } from "framer-motion";
-import { useState, useEffect } from "react";
 
 const animation = {
   hidden: { opacity: 0, y: 30 },
@@ -11,48 +10,7 @@ const animation = {
   },
 };
 
-const Events = ({ button = true }) => {
-  const [events, setEvents] = useState(null);
-
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await fetch(
-          `https://www.googleapis.com/calendar/v3/calendars/${
-            process.env.NEXT_PUBLIC_GOOGLE_CALENDAR_EMAIL
-          }/events?key=${process.env.NEXT_PUBLIC_GOOGLE_CALENDAR_API_KEY}
-          &singleEvents=true&orderBy=startTime&timeMin=${new Date(
-            new Date().getTime() - 60 * 60 * 24 * 7 * 10 * 1000
-          ).toISOString()}&timeMax=${new Date(
-            new Date().getTime() + 60 * 60 * 24 * 7 * 10 * 1000
-          ).toISOString()}`
-        );
-        const offset = new Date().getTimezoneOffset() * 60000;
-        const data = await response.json();
-        if (data.items) {
-          const items = data.items.map((item) => {
-            item.allDay = !item.start.dateTime;
-            (item.start = item.start.dateTime
-              ? new Date(item.start.dateTime)
-              : new Date(new Date(item.start.date).getTime() + offset)),
-              (item.end = new Date(
-                item.end.dateTime || new Date(item.end.date).getTime() + offset
-              )),
-              (item.hidden = false);
-
-            return item;
-          });
-
-          setEvents(items);
-        }
-      } catch (error) {
-        console.error("Error fetching data: ", error);
-      }
-    };
-
-    fetchData();
-  }, []);
-
+const Events = ({ button = true, events }) => {
   return (
     <div className="flex flex-col itmems-center justify-center w-full my-3">
       <motion.div

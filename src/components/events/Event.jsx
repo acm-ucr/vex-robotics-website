@@ -11,7 +11,7 @@ const Event = ({
   description = "",
 }) => {
   return (
-    <div className="bg-white flex flex-col rounded-xl overflow-hidden w-2/3 md:w-3/4 min-w-96 font-righteous">
+    <div className="bg-white flex flex-col rounded-xl overflow-hidden md:w-1/2 w-5/6 font-righteous">
       <div className="px-4 py-1 flex items-left text-vex-purple-200 bg-vex-purple-400">
         <p className="text-md md:text-2xl font-semibold mb-1 mt-1">{summary}</p>
       </div>
