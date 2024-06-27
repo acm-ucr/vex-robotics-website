@@ -3,13 +3,17 @@ import reactHtmlParser from "html-react-parser";
 
 const Modal = ({ event, setEvent }) => {
   return (
-    <div className="font-playfair fixed top-[56%] left-1/2 -translate-x-1/2 -translate-y-1/2 w-[75vw] md:w-[50vw] bg-saf-red z-10 drop-shadow-lg">
+    <div className="font-playfair fixed top-[56%] left-1/2 -translate-x-1/2 -translate-y-1/2 w-[75vw] md:w-[40vw] bg-saf-red z-10 drop-shadow-lg bg-vex-purple-200 rounded-md text-white">
       <div className={`flex justify-between items-center ${event.color}`}>
-        <p className={"m-0 py-2 md:py-3 px-3 md:px-4 text-lg md:text-2xl"}>
+        <p
+          className={
+            "m-0 py-2 md:py-3 px-3 md:px-4 text-lg md:text-2xl translate-y-5"
+          }
+        >
           {event.summary}
         </p>
 
-        <div className="absolute right-2 md:py-3 px-12 md:px-12 text-lg md:text-2xl">
+        <div className="absolute right-2 py-3 px-12 md:px-12 text-lg md:text-2xl">
           {event.allDay
             ? "All Day"
             : new Date(event.start).toLocaleTimeString(navigator.language, {
