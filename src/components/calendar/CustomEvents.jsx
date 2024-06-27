@@ -1,15 +1,14 @@
 const CustomEvent = ({ event }) => {
   return (
-    <div className="font-playfair text-sm flex bg-saf-red justify-start p-1">
-      <p className="whitespace-nowrap m-0">
+    <div className="font-playfair md:text-xs sm:text-[10px] text-[7px] flex justify-center">
+      <div className="m-0">
         {!event.allDay &&
           new Date(event.start).toLocaleTimeString(navigator.language, {
             hour: "2-digit",
             minute: "2-digit",
+            hour12: false,
           })}
-        &nbsp;
-        {event.summary}
-      </p>
+      </div>
     </div>
   );
 };
