@@ -76,7 +76,7 @@ const CalendarEvent = () => {
           whileInView="show"
           viewport={{ once: true, amount: 0.1 }}
         >
-          <div className="flex justify-center h-[70vh] sm:h-60[vh] w-full font-righteous relative text-black font-bold border-0">
+          <div className="flex justify-center h-[90vh] sm:h-60[vh] w-full font-righteous relative text-black font-bold border-0">
             <Calendar
               date={date}
               className="w-full m-0 p-0 text-md md:text-2xl flex justify-center remove-calendar-gridlines overflow-hidden"
@@ -94,18 +94,12 @@ const CalendarEvent = () => {
               onNavigate={(newDate) => {
                 return setDate(newDate);
               }}
-              eventPropGetter={() => {
-                return {
-                  className: `p-0 !active:ring-0 !focus:outline-0 !bg-transparent`,
-                };
-              }}
-              onSelectEvent={(event) => setEvent(event)}
               dayPropGetter={(event) => {
                 return {
                   className: `${
                     new Date(event).toLocaleDateString() ===
                     new Date().toLocaleDateString()
-                      ? "!bg-opacity-80 !bg-saf-beige-200"
+                      ? "!bg-opacity-80"
                       : "!bg-transparent"
                   } `,
                   style: {
@@ -117,6 +111,13 @@ const CalendarEvent = () => {
                   },
                 };
               }}
+              eventPropGetter={() => {
+                return {
+                  className:
+                    "p-0 m-0 !active:ring-0 !focus:outline-0 !bg-vex-purple-200 -translate-y-2 h-5",
+                };
+              }}
+              onSelectEvent={(event) => setEvent(event)}
             />
           </div>
           {event && <Modal event={event} setEvent={setEvent} />}
