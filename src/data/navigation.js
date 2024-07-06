@@ -7,10 +7,10 @@ export const items = [
     name: "ABOUT US",
     link: "/about",
   },
-  {
-    name: "MEDIA",
-    link: "/media",
-  },
+  // {
+  //   name: "MEDIA",
+  //   link: "/media",
+  // },
   {
     name: "EVENTS",
     link: "/events",
