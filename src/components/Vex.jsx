@@ -4,7 +4,7 @@ import Image from "next/image";
 import DotBar from "@/public/assets/DotBar.svg";
 import CrossBar from "@/public/assets/CrossBar.svg";
 import { motion } from "framer-motion";
-import AboutPhoto from "@/public/images/about_photo.png";
+import AboutPhoto from "@/public/images/about_photo.webp";
 const Vex = () => {
   return (
     <div className="flex flex-col xl:flex-row w-5/6 xl:w-3/4 items-center align-middle">

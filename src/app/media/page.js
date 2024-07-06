@@ -15,7 +15,7 @@ const MediaPage = () => {
         whileHover={{ scale: 1.1 }}
         transition={{ type: "spring", stiffness: 300, damping: 30 }}
       >
-        <Button link="/contact" text="Contact Us" />
+        <Button link="mailto: ucrvexrobotics@gmail.com" text="Contact Us" />
       </motion.div>
     </div>
   );

@@ -32,7 +32,7 @@
 }
 
 .rbc-row {
-  padding: 12px;
+  padding: 7px;
   text-align: center;
 }
 
@@ -42,4 +42,8 @@
 
 .rbc-date-cell {
   text-align: center;
+}
+
+.rbc-row-segment {
+  max-height: 1vh;
 }
