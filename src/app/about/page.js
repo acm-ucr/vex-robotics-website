@@ -11,7 +11,7 @@ const AboutPage = () => {
       <Subteams />
       <Image src={purpleBar} alt="purple bar" className="w-3/4" />
       <Button
-        link="mailto: ucrvexrobotics@gmail.com"
+        link="mailto:ucrvexrobotics@gmail.com"
         text="Contact Us"
         color=""
       />

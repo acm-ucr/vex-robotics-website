@@ -7,6 +7,7 @@ import Image from "next/image";
 import purpleBar from "@/public/assets/PurpleBar.svg";
 import { motion } from "framer-motion";
 import { useEffect } from "react";
+
 const Home = () => {
   const slideInFromLeft = {
     hidden: { x: "-75vw" },
@@ -38,6 +39,7 @@ const Home = () => {
       document.body.style.overflowX = "auto";
     };
   }, []);
+
   return (
     <div className="flex flex-col w-full justify-center items-center gap-10 overflow-x-hidden">
       <Landing />
