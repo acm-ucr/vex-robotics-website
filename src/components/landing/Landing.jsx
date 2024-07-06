@@ -4,6 +4,7 @@ import Image from "next/image";
 import Title from "@/components/Title";
 import Button from "@/components/Button";
 import { motion } from "framer-motion";
+import VEXLanding from "@/public/images/VEXLanding.jpg";
 const Landing = () => {
   return (
     <div className="flex flex-col justify-center items-center">
@@ -11,7 +12,7 @@ const Landing = () => {
         <Image
           className="-z-10"
           objectFit="cover"
-          src="/images/vexrobo.webp"
+          src={VEXLanding}
           layout="fill"
           alt="background image"
         />
