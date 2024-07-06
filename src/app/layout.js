@@ -32,14 +32,15 @@ const righteous = Righteous({
 
 export const metadata = {
   title: "VEX Robotics at UCR",
-  description: "VEX Robotics Official Website",
+  description:
+    "VEX Robotics, providing the tools to inspire the problem solvers of tomorrow through the use of education robotic solutions.",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`bg-vex-black flex flex-col justify-center ${russo.variable} ${righteous.variable} ${saira.variable}`}
+        className={`bg-vex-black flex flex-col justify-center ${russo.variable} ${righteous.variable} ${saira.variable} `}
       >
         <Navigation />
         <div className="w-full flex flex-col items-center justify-center">
