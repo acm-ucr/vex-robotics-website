@@ -4,7 +4,7 @@ import Image from "next/image";
 import Title from "@/components/Title";
 import Button from "@/components/Button";
 import { motion } from "framer-motion";
-import VEXLanding from "@/public/images/VEXLanding.jpg";
+import VEXLanding from "@/public/images/VEXLanding.webp";
 const Landing = () => {
   return (
     <div className="flex flex-col justify-center items-center">
