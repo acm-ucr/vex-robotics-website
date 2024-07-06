@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 const Subteams = () => {
   return (
-    <div className="pb-12">
+    <div className="pb-12 w-5/6">
       {items.map((item, index) => {
         const slideanimation = {
           hidden: { opacity: 0, y: -10 },
@@ -27,6 +27,7 @@ const Subteams = () => {
           >
             <Subteam
               key={index}
+              team={item.subteam}
               text={item.text}
               img={item.img}
               float={item.float}

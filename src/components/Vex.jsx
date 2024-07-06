@@ -17,10 +17,8 @@ const Vex = () => {
             WHAT IS VEX ROBOTICS
           </p>
           <p className="text-left font-saira text-vex-white  text-sm xl:text-3xl">
-            Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-            cupidatat non proident, sunt in culpa qui officia deserunt mollit
-            anim id est laborum.
+            VEX Robotics, providing the tools to inspire the problem solvers of
+            tomorrow through the use of education robotic solutions.
           </p>
         </div>
       </div>

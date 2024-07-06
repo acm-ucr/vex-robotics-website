@@ -11,11 +11,11 @@
 
 ## Figma
 
-[UCR VEX ROBOTICS Official Website Template Figma Design File](https://www.figma.com/file/Hm3UEUMHEMS0De2ToFyjib/Vex-Robotics?type=design&node-id=0-1&mode=design&t=YwwoejruoTVssKcs-0)
+[UCR VEX ROBOTICS Official Website Figma Design File](https://www.figma.com/file/Hm3UEUMHEMS0De2ToFyjib/Vex-Robotics?type=design&node-id=0-1&mode=design&t=YwwoejruoTVssKcs-0)
 
 ## Node.js
 
-VEX ROBOTICS UCR Website Template runs on Node.js Version 20.10.0 and higher. Please ensure you have Node.js installed via the [official website](https://nodejs.org/en).
+VEX ROBOTICS UCR Website runs on Node.js Version 20.10.0 and higher. Please ensure you have Node.js installed via the [official website](https://nodejs.org/en).
 
 ## Next.js
 
